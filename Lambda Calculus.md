@@ -7,6 +7,7 @@
 
 * Abstraction
   λ x. M
+  
 * Application
   M N
 

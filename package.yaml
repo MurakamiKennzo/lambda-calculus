@@ -21,6 +21,9 @@ description:         Please see the README on GitHub at <https://github.com/Mura
 
 dependencies:
 - base >= 4.7 && < 5
+- parsec
+- haskeline
+- mtl
 
 library:
   source-dirs: src
