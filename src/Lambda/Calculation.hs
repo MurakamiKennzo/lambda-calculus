@@ -40,10 +40,10 @@ captureAvoidingSubsitution x replacement (Abstraction y lambda)
 βReduction (Application a@(Application _ _) lambda) = βReduction $ Application (βReduction a) lambda
 βReduction lambda = lambda
 
--- ηReduction :: Lambda -> Lambda
--- ηReduction = a@(Abstraction x (Application lambda (Variable y)))
---   | x == y && x `notElem` freeVariables lambda = lambda
---   | otherwise = a
+ηReduction :: Lambda -> Lambda
+ηReduction a@(Abstraction x (Application lambda (Variable y)))
+  | x == y && x `notElem` freeVariables lambda = lambda
+  | otherwise = a
 
 calculation :: Lambda -> Lambda
 calculation lambda = if lambda == lambda' then lambda else calculation lambda'
