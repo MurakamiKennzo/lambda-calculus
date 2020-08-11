@@ -1,7 +1,9 @@
 module Lambda.Calculation 
   (
     calculation
+  , αConversion
   , βReduction
+  , ηReduction
   ) where
 
 import Lambda.Syntax

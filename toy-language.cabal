@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 49da8aa2dc208a93a82f516420bd920b7e0c6b68b851fb6f2797d7dd1938270b
+-- hash: c4c0314ea40d09936bbcd355d2682c886c7007f556b0550bcdfe4f841b6ecc33
 
 name:           toy-language
 version:        0.1.0.0
@@ -31,7 +31,6 @@ library
       Lambda.Format
       Lambda.Parser
       Lambda.Syntax
-      Lib
   other-modules:
       Paths_toy_language
   hs-source-dirs:
