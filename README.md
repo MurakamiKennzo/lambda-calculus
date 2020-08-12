@@ -11,8 +11,11 @@
 * Application
   M N
 
-## Lambda Operation
+## Lambda Reduction
 
 * α-conversion
 * β-reduction
 * η-reduction
+
+## Demo
+

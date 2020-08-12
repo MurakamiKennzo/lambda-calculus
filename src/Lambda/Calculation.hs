@@ -36,6 +36,7 @@ captureAvoidingSubsitution x replacement (Abstraction y lambda)
   | x `notElem` variables lambda = Abstraction x lambda'
   | otherwise = Abstraction y lambda
   where lambda' = captureAvoidingSubsitution y (Variable x) lambda
+αConversion _ lambda = lambda
 
 βReduction :: Lambda -> Lambda
 βReduction (Application (Abstraction s lambda) lambda') = captureAvoidingSubsitution s lambda' lambda
@@ -46,6 +47,7 @@ captureAvoidingSubsitution x replacement (Abstraction y lambda)
 ηReduction a@(Abstraction x (Application lambda (Variable y)))
   | x == y && x `notElem` freeVariables lambda = lambda
   | otherwise = a
+ηReduction lambda = lambda
 
 calculation :: Lambda -> Lambda
 calculation lambda = if lambda == lambda' then lambda else calculation lambda'
