@@ -21,4 +21,4 @@
 
 This is a simple example of Y combinator.
 
-
+![Y-combinator](./example-images/Y-combinator.gif)
