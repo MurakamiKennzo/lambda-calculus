@@ -19,3 +19,6 @@
 
 ## Demo
 
+This is a simple example of Y combinator.
+
+
